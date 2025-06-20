@@ -7,7 +7,7 @@ State Ferry fare based on age and whether the person has a vehicle. Assume the f
 '''
 def ferry_fare(age, vehicle):
     if age <= 18:
-        return 0  # Children ride free
+        return 0 
     elif 19 <= age <= 64:
         if vehicle:
             return 20
@@ -19,4 +19,8 @@ def ferry_fare(age, vehicle):
         else:
             return 5
 
-print(ferry_fare(18, True)) 
+print(ferry_fare(25, True))
+print(ferry_fare(25, False)) 
+print(ferry_fare(70, True)) 
+print(ferry_fare(70, False)) 
+print(ferry_fare(12, False)) 
